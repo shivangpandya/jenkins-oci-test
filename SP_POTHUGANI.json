@@ -1,0 +1,7 @@
+{
+  "agentRequired": true,
+  "agentSupported": true,
+  "id": "SP_POTHUGANI",
+  "role": "SOURCE_AND_TARGET",
+  "securityPolicy": "NONE"
+}

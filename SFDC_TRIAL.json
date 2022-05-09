@@ -1,0 +1,46 @@
+{
+  "agentRequired": false,
+  "agentSupported": false,
+  "connectionProperties": [
+    {
+      "attachment": {
+        "attachmentName": "sfdc.wsdl",
+        "propertyName": "targetWSDLURL",
+        "signature": "5fa82b7b92eeee8df020eae91b1297f029186fe90e00573e62bc60d4113b4261"
+      },
+      "displayName": "Enterprise WSDL Location",
+      "hasAttachment": true,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "targetWSDLURL",
+      "propertyType": "URL_OR_FILE",
+      "propertyValue": "sfdc.wsdl",
+      "requiredFlag": true
+    }
+  ],
+  "id": "SFDC_TRIAL",
+  "role": "SOURCE_AND_TARGET",
+  "securityPolicy": "CUSTOM",
+  "securityProperties": [
+    {
+      "displayName": "Username",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "username",
+      "propertyType": "STRING",
+      "propertyValue": "ram.mani99@gmail.com",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Password",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "password",
+      "propertyType": "PASSWORD",
+      "propertyValue": "*****",
+      "requiredFlag": true
+    }
+  ]
+}

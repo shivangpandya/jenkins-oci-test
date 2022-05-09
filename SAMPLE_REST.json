@@ -1,0 +1,7 @@
+{
+  "agentRequired": false,
+  "agentSupported": false,
+  "id": "SAMPLE_REST",
+  "role": "SOURCE",
+  "securityPolicy": "MULTI_TOKEN_INBOUND"
+}

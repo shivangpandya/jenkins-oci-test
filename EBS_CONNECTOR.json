@@ -1,0 +1,44 @@
+{
+  "agentRequired": false,
+  "agentSupported": true,
+  "connectionProperties": [
+    {
+      "displayName": "Connection URL",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "connectionUrl",
+      "propertyType": "URL",
+      "propertyValue": "https://ucf4-ebs0114-gse.oracledemos.com:443",
+      "requiredFlag": true
+    }
+  ],
+  "description": "user name and password is hrsetup / welcomefor admin  : system / systemfor super user : operations / welcome",
+  "id": "EBS_CONNECTOR",
+  "role": "SOURCE_AND_TARGET",
+  "securityPolicy": "BASIC_AUTH",
+  "securityProperties": [
+    {
+      "displayName": "Username",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "A username credential",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "username",
+      "propertyType": "STRING",
+      "propertyValue": "hrsetup",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Password",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "A password credential",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "password",
+      "propertyType": "PASSWORD",
+      "propertyValue": "*****",
+      "requiredFlag": true
+    }
+  ]
+}

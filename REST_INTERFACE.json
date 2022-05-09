@@ -1,0 +1,7 @@
+{
+  "agentRequired": false,
+  "agentSupported": false,
+  "id": "REST_INTERFACE",
+  "role": "SOURCE",
+  "securityPolicy": "MULTI_TOKEN_INBOUND"
+}

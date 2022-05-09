@@ -1,0 +1,131 @@
+{
+  "adminEmail": "rahul.tasker@oracle.com",
+  "agentRequired": false,
+  "agentSupported": true,
+  "connectionProperties": [
+    {
+      "displayName": "Connection Type",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "connectionType",
+      "propertyType": "CHOICE",
+      "propertyValue": "restUrl",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "TLS Version",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "tlsVersion",
+      "propertyShortDesc": "TLS Version",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "Connection URL",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "connectionUrl",
+      "propertyShortDesc": "Please make sure that this value really corresponds to the type selected above.",
+      "propertyType": "URL",
+      "propertyValue": "https://waas.us-ashburn-1.oraclecloud.com/20181116/waasPolicies/ocid1.waaspolicy.oc1..aaaaaaaadymzt2hytz4ir77bcsx7w5h6fkqh3a4ymtycxoec5crnhiss7s3a",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Enable two way SSL for outbound connections (Optional)",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Both the client and the server pass certificates to each other to establish an SSL link, when two-way SSL is enabled. Both sides now know the identity of the other from their respective certificates.",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "enableTwoWaySSL",
+      "propertyShortDesc": "Select \"Yes\" if both the client and server should authenticate each other.",
+      "propertyType": "CHOICE",
+      "propertyValue": "true",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "Identity keystore alias name (Optional)",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Both the client and the server pass certificates to each other to establish an SSL link, when two-way SSL is enabled. Name of the identity certificate alias to use for that communication. This value should match the alias that was provided to import identity to ICS.",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "sslCertificateAlias",
+      "propertyShortDesc": "Name of alias to use for establishing identity during two way SSL communication",
+      "propertyType": "STRING",
+      "propertyValue": "WAF_connect",
+      "requiredFlag": false
+    }
+  ],
+  "description": "Connection to WAF API",
+  "id": "WAF_CONNECTION",
+  "role": "SOURCE_AND_TARGET",
+  "securityPolicy": "OCI_SIGNATURE_VERSION1",
+  "securityProperties": [
+    {
+      "displayName": "Tenancy OCID",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "TenancyOCID",
+      "propertyShortDesc": "Tenancy OCID of OCI",
+      "propertyType": "STRING",
+      "propertyValue": "ocid1.tenancy.oc1..aaaaaaaampajwjptkttmi3cv6xt5eiwkqbkiqxuwb7kom4lomsbjfpvjuteq",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "User OCID",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "User OCID of OCI",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "UserOCID",
+      "propertyShortDesc": "User OCID of OCI",
+      "propertyType": "STRING",
+      "propertyValue": "ocid1.user.oc1..aaaaaaaal36vvpfzgsguplhgukfe73o75mqtmrmwxnvib5udisejppbo3yya",
+      "requiredFlag": true
+    },
+    {
+      "attachment": {
+        "attachmentName": "oci_api_key.pem",
+        "propertyName": "PrivateKey",
+        "signature": "a91e554d3f2252f87282727b40b28aed05c96f23b78353b5e9826f80860df01a"
+      },
+      "displayName": "Private Key",
+      "hasAttachment": true,
+      "hiddenFlag": false,
+      "propertyDescription": "OCI Private Key",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "PrivateKey",
+      "propertyShortDesc": "OCI Private Key",
+      "propertyType": "URL_OR_FILE",
+      "propertyValue": "oci_api_key.pem",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Finger Print",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Finger Print",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "FingerPrint",
+      "propertyShortDesc": "Finger Print",
+      "propertyType": "STRING",
+      "propertyValue": "9e:a6:4e:75:61:6a:70:0c:da:5e:39:c2:d5:3e:57:ae",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Pass Phrase",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Password entered at the time of generating the public/private key.",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "PassPhrase",
+      "propertyShortDesc": "Password entered at the time of generating the public/private key.",
+      "propertyType": "PASSWORD",
+      "requiredFlag": false
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "agentRequired": false,
+  "agentSupported": false,
+  "id": "RESTOOW_SP",
+  "role": "SOURCE",
+  "securityPolicy": "MULTI_TOKEN_INBOUND"
+}

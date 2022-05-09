@@ -1,0 +1,58 @@
+{
+  "agentRequired": false,
+  "agentSupported": false,
+  "description": "",
+  "id": "DSHETH_TWITTER",
+  "role": "TARGET",
+  "securityPolicy": "CUSTOM",
+  "securityProperties": [
+    {
+      "displayName": "Consumer Key (API Key)",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "These credentials are generated on the Twitter site.\n All you need to do is setup your account on twitter, and visit https://apps.twitter.com/ and create your app. \n Once you create your app, Click on this app and get the Consumer Key and Consumer Secret in the details tab.",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "consumerKey",
+      "propertyShortDesc": "Consumer Key (API Key) ",
+      "propertyType": "STRING",
+      "propertyValue": "nKCME87TCqYYObHm5dyY5Eaee",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Consumer Secret (API Secret)",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "These credentials are generated on the Twitter site.\n All you need to do is setup your account on twitter, and visit https://apps.twitter.com/ and create your app. \n Once you create your app, Click on this app and get the Consumer Key and Consumer Secret in the details tab.",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "consumerSecret",
+      "propertyShortDesc": "Consumer Secret (API Secret)",
+      "propertyType": "STRING",
+      "propertyValue": "jUD8McZz0HX0JXmUdezYFjvgrERWBZEV9UcO1PQICrwzwvGXIM",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Access Token",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Visit https://apps.twitter.com/ and authorize your app to access your twitter account. \n After Authorizing, you can get the Access Token and Access Secret on the 'Keys and Access Tokens' tab.",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "accessToken",
+      "propertyShortDesc": "Access Token",
+      "propertyType": "STRING",
+      "propertyValue": "852632083101093890-7K2Z7XhOUzzw7IKPdJbqhOLrFxEZsgt",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Access Secret",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Visit https://apps.twitter.com/ and authorize your app to access your twitter account. \n After Authorizing, you can get the Access Token and Access Secret on the 'Keys and Access Tokens' tab.",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "accessSecret",
+      "propertyShortDesc": "Access Secret",
+      "propertyType": "STRING",
+      "propertyValue": "w2Q92KgGMcleqRVDW8ZKGkpyEmm3QnrGqo8UdsMdjXv0e",
+      "requiredFlag": true
+    }
+  ]
+}

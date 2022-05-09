@@ -1,0 +1,103 @@
+{
+  "agentRequired": true,
+  "agentSupported": true,
+  "connectionProperties": [
+    {
+      "displayName": "Host",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "SQL Server Host",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "Host",
+      "propertyShortDesc": "Host",
+      "propertyType": "STRING",
+      "propertyValue": "127.0.0.1",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Port",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Port Number",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "Port",
+      "propertyShortDesc": "Port",
+      "propertyType": "STRING",
+      "propertyValue": "1433",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "Database Name",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Database Name",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "Database",
+      "propertyShortDesc": "Database Name",
+      "propertyType": "STRING",
+      "propertyValue": "TestDB",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "Instance Name",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Please input Instance Name if exists",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "Instance",
+      "propertyShortDesc": "Instance Name",
+      "propertyType": "STRING",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "Encrypt Connection",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "If Yes, it will connect to SQL Server using encrypt connection.",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "EncryptConnection",
+      "propertyShortDesc": "Encrypt Connection, deault value is No",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "Validate Server Certificate",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Validate Server Certificate, only valid while using Encrypt Connection",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "ValidateServerCertificate",
+      "propertyShortDesc": "Validate Server Certificate",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    }
+  ],
+  "description": "",
+  "id": "CKR_SQL",
+  "role": "SOURCE_AND_TARGET",
+  "securityPolicy": "USERNAME_PASSWORD_TOKEN",
+  "securityProperties": [
+    {
+      "displayName": "Username",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "A username credential",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "username",
+      "propertyType": "STRING",
+      "propertyValue": "SA",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Password",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "A password credential",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "password",
+      "propertyType": "PASSWORD",
+      "propertyValue": "*****",
+      "requiredFlag": true
+    }
+  ]
+}

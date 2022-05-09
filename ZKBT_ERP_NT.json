@@ -1,0 +1,46 @@
+{
+  "agentRequired": false,
+  "agentSupported": false,
+  "connectionProperties": [
+    {
+      "displayName": "ERP Cloud Host",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Oracle ERP Cloud Host Name is required to configure the adapter for both inbound and outbound endpoints. Please provide the hostname that appears in the ERP Cloud home page URL as https://<hostname>/homePage/faces/FuseWelcome",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "Host",
+      "propertyShortDesc": "https://<customer_chosen_domain_name>.fa.<DC>.oraclecloud.com",
+      "propertyType": "URL",
+      "propertyValue": "https://ucf1-zkbt-fa-ext.oracledemos.com/",
+      "requiredFlag": true
+    }
+  ],
+  "description": "",
+  "id": "ZKBT_ERP_NT",
+  "role": "SOURCE_AND_TARGET",
+  "securityPolicy": "USERNAME_PASSWORD_TOKEN",
+  "securityProperties": [
+    {
+      "displayName": "Username",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "A username credential",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "username",
+      "propertyType": "STRING",
+      "propertyValue": "casey.brown",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Password",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "A password credential",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "password",
+      "propertyType": "PASSWORD",
+      "propertyValue": "*****",
+      "requiredFlag": true
+    }
+  ]
+}

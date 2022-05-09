@@ -1,0 +1,8 @@
+{
+  "agentRequired": false,
+  "agentSupported": false,
+  "description": "OIC Workshop Practice",
+  "id": "ONLINESHOPPINGAPPSERVICE",
+  "role": "SOURCE",
+  "securityPolicy": "MULTI_TOKEN_INBOUND"
+}

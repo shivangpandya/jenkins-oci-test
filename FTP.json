@@ -1,0 +1,295 @@
+{
+  "agentRequired": false,
+  "agentSupported": true,
+  "connectionProperties": [
+    {
+      "displayName": "FTP Server Host Address",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Enter the publicly accessible FTP Server Host Address. For example, server123.oracle.com",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "Host",
+      "propertyShortDesc": "FTP Server Host Address. For example, server123.oracle.com",
+      "propertyType": "STRING",
+      "propertyValue": "sftp.us2.cloud.oracle.com",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "FTP Server Port",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Enter the FTP Server Port. For example, 21 for FTP and 990 for Implicit FTP SSL",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "Port",
+      "propertyShortDesc": "FTP Server Port. For example, 21 for FTP and 990 for Implicit FTP SSL",
+      "propertyType": "NUMBER",
+      "propertyValue": "22",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "SFTP Connection",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "UseSftp",
+      "propertyType": "CHOICE",
+      "propertyValue": "true",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "Passive IP as Host Address",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "UsePassiveIpAsHostIp",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "Host Key",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "HostKeyCertificate",
+      "propertyShortDesc": "Host Key of SFTP Server",
+      "propertyType": "URL_OR_FILE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "FTP SSL Type",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "UseImplicitSSL",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "SSL Certificate",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "SSLCERTIFICATE",
+      "propertyShortDesc": "Upload SSL Certificate",
+      "propertyType": "URL_OR_FILE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "FTP Server OS",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "ListParserKey",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "FTP SSL Channel Mask",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "ChannelMask",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "SFTP Key Exchange Algorithm",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "PreferredKeyExchangeAlgorithm",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "SFTP Preferred Cipher Suite",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "PreferredCipherSuite",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "SFTP Preferred Data Integrity Algorithm",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "PreferredDataIntegrityAlgorithm",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "SFTP Preferred PKI Algorithm",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "PreferredPKIAlgorithm",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "FTP Server Time Zone",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "ServerTimeZone",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    }
+  ],
+  "id": "FTP",
+  "role": "SOURCE_AND_TARGET",
+  "securityPolicy": "CUSTOM",
+  "securityProperties": [
+    {
+      "displayName": "User Name",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "username",
+      "propertyShortDesc": "Enter User Name",
+      "propertyType": "STRING",
+      "propertyValue": "a43107O1",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Password",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "password",
+      "propertyShortDesc": "Enter Password",
+      "propertyType": "PASSWORD",
+      "propertyValue": "*****",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "SSL Certificate Password",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "WalletPassword",
+      "propertyShortDesc": "Enter SSL Certificate Password",
+      "propertyType": "PASSWORD",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "PGP Public Key",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "PGPPUBLICKEY",
+      "propertyShortDesc": "PGP public key is used for encrypting message payload ",
+      "propertyType": "URL_OR_FILE",
+      "requiredFlag": false
+    },
+    {
+      "acceptableKeys": [
+        {
+          "displayName": "Yes",
+          "keyName": "true",
+          "scope": "SOURCE_AND_TARGET"
+        },
+        {
+          "displayName": "No",
+          "keyName": "false",
+          "scope": "SOURCE_AND_TARGET"
+        }
+      ],
+      "displayName": "ASCII-Armor Encryption Format",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "PGPASCIIARMOR",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    },
+    {
+      "acceptableKeys": [
+        {
+          "displayName": "CAST5",
+          "keyName": "CAST5",
+          "scope": "SOURCE_AND_TARGET"
+        },
+        {
+          "displayName": "TDES",
+          "keyName": "3DES",
+          "scope": "SOURCE_AND_TARGET"
+        },
+        {
+          "displayName": "AES128",
+          "keyName": "AES128",
+          "scope": "SOURCE_AND_TARGET"
+        },
+        {
+          "displayName": "AES192",
+          "keyName": "AES192",
+          "scope": "SOURCE_AND_TARGET"
+        },
+        {
+          "displayName": "AES256",
+          "keyName": "AES256",
+          "scope": "SOURCE_AND_TARGET"
+        }
+      ],
+      "displayName": "Cipher Algorithm",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "PGPCIPHER",
+      "propertyType": "CHOICE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "PGP Private Key",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "PGPPRIVATEKEY",
+      "propertyShortDesc": "PGP Private Key is used for decrypting message payload",
+      "propertyType": "URL_OR_FILE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "PGP Private Key Password",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "PGPPRIVATEKEYPASSWORD",
+      "propertyShortDesc": "PGP Private Key  password is used for encrypting private key",
+      "propertyType": "PASSWORD",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "PGP Sign Public Key",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "PGPSignPublicKey",
+      "propertyShortDesc": "PGP Public Key is used for verification of signed message payload",
+      "propertyType": "URL_OR_FILE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "PGP Sign Private Key",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "PGPSignPrivateKey",
+      "propertyShortDesc": "PGP Private Key is used for signing the message payload",
+      "propertyType": "URL_OR_FILE",
+      "requiredFlag": false
+    },
+    {
+      "displayName": "PGP Sign Private key Password",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "PGPSignPrivateKeyPassword",
+      "propertyShortDesc": "PGP Private Key  password is used for encrypting private key",
+      "propertyType": "PASSWORD",
+      "requiredFlag": false
+    }
+  ]
+}

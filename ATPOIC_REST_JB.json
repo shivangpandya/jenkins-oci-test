@@ -1,0 +1,8 @@
+{
+  "agentRequired": false,
+  "agentSupported": false,
+  "description": "rest Adapter for ATP and OIC ",
+  "id": "ATPOIC_REST_JB",
+  "role": "SOURCE",
+  "securityPolicy": "MULTI_TOKEN_INBOUND"
+}

@@ -1,0 +1,73 @@
+{
+  "adminEmail": "xuan.gao@oracle.com",
+  "agentRequired": false,
+  "agentSupported": false,
+  "connectionProperties": [
+    {
+      "displayName": "WSDL URL",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "targetWSDLURL",
+      "propertyType": "WSDL_URL",
+      "propertyValue": "https://webservices.netsuite.com/wsdl/v2018_1_0/netsuite.wsdl",
+      "requiredFlag": true
+    }
+  ],
+  "id": "PUBLIC_SAFETY",
+  "role": "TARGET",
+  "securityPolicy": "CUSTOM",
+  "securityProperties": [
+    {
+      "displayName": "Email Address",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "email",
+      "propertyType": "STRING",
+      "propertyValue": "xuan.gao@oracle.com",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Account",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "account",
+      "propertyType": "STRING",
+      "propertyValue": "TSTDRV2069550",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Role",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "role",
+      "propertyType": "STRING",
+      "propertyValue": "18",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Password",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "password",
+      "propertyType": "PASSWORD",
+      "propertyValue": "*****",
+      "requiredFlag": true
+    },
+    {
+      "displayName": "Application Id",
+      "hasAttachment": false,
+      "hiddenFlag": false,
+      "propertyDescription": "Enter the 32-character unique application Id that represents this connection as an Integration Record in Netsuite application. You can re-use the same application Id across Netsuite connections based on your requirement. The Integration Record containing this application Id can be set up from within your NetSuite application environment by navigating to Setup > Integration > Manage Integrations > New. You are required to select \"User credentials\" under \"Authentication\" subtab since Netsuite connection uses user credentials to authenticate the requests.",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "applicationId",
+      "propertyType": "STRING",
+      "propertyValue": "A2BE142C-0F26-444E-8669-AA9F027BA19C",
+      "requiredFlag": false
+    }
+  ]
+}
